@@ -1,0 +1,186 @@
+header {
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+
+        &__logo {
+            padding: 22px 0;
+        }
+
+        &__list {
+            display: flex;
+            column-gap: 24px;
+
+            &_item {
+                padding-top: 22px;
+
+                &-link {
+                    padding: 22px 0;
+                    border-bottom: 2px solid transparent;
+                    transition: all 0.5s ease;
+
+                    &:hover {
+                        border-bottom: 2px solid #666666;
+                        color: #666666;
+                    }
+                }
+
+
+            }
+
+            & .h_btns {
+                display: flex;
+                align-items: center;
+                column-gap: 16px;
+
+                & .bx-sun {
+                    font-size: 24px;
+                    padding: 6px 6px 6px 24px;
+                    cursor: pointer;
+                    border-left: 1px solid #F3F4F6;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        scale: 120%;
+                    }
+
+                    &:active {
+                        scale: 90%;
+                    }
+                }
+
+                & .bx-moon {
+                    font-size: 24px;
+                    padding: 6px 6px 6px 24px;
+                    cursor: pointer;
+                    border-left: 1px solid #F3F4F6;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        scale: 120%;
+                    }
+
+                    &:active {
+                        scale: 90%;
+                    }
+                }
+
+                & button {
+                    padding: 6px 16px;
+                    border-radius: 12px;
+                    background: var(--gray-900, #111827);
+                    color: #FFFFFF;
+                    transition: all 0.3s ease-in;
+                    border: 2px solid transparent;
+
+                    &:hover {
+                        background: #FFFFFF;
+                        color: #111827;
+                        border: 2px solid #111827;
+                    }
+                }
+            }
+        }
+
+        & .bx-menu {
+            display: none;
+            font-size: 24px;
+            padding: 6px;
+            margin: 16px 0;
+            cursor: pointer;
+
+            &:hover {
+                scale: 120%;
+            }
+
+            &:active {
+                scale: 90%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        width: 100%;
+        position: fixed;
+        top: 0;
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+
+            &__logo {
+                padding: 22px 0;
+            }
+
+            &__list {
+                display: none;
+                column-gap: 24px;
+
+                &_item {
+                    padding-top: 22px;
+
+                    &-link {
+                        padding: 22px 0;
+                        border-bottom: 2px solid transparent;
+                        transition: all 0.5s ease;
+
+                        &:hover {
+                            border-bottom: 2px solid #666666;
+                            color: #666666;
+                        }
+                    }
+
+
+                }
+
+                & .h_btns {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 16px;
+
+                    & .bx-sun {
+                        font-size: 24px;
+                        padding: 6px 6px 6px 24px;
+                        cursor: pointer;
+                        border-left: 1px solid #F3F4F6;
+                        transition: all 0.3s ease;
+
+                        &:hover {
+                            scale: 120%;
+                        }
+
+                        &:active {
+                            scale: 90%;
+                        }
+                    }
+
+                    & button {
+                        padding: 6px 16px;
+                        border-radius: 12px;
+                        background: var(--gray-900, #111827);
+                        color: #FFFFFF;
+                        transition: all 0.3s ease-in;
+                        border: 2px solid transparent;
+
+                        &:hover {
+                            background: #FFFFFF;
+                            color: #111827;
+                            border: 2px solid #111827;
+                        }
+                    }
+                }
+            }
+
+            & .bx-menu {
+                display: block;
+            }
+        }
+    }
+}

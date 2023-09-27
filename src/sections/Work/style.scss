@@ -1,0 +1,184 @@
+#work {
+    padding: 96px 0;
+
+    & .work_btn {
+        display: block;
+        margin: 0 auto;
+        padding: 4px 20px;
+        border-radius: 12px;
+        background: var(--gray-200, #E5E7EB);
+        color: var(--gray-600, #4B5563);
+        font-family: Inter-Medium;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+    & .work_text {
+        text-align: center;
+        font-family: Inter-Regular;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        margin: 16px 0 48px 0;
+    }
+
+    & .card_wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 48px;
+
+        & .work_card {
+            display: flex;
+            justify-content: space-between;
+            border-radius: 12px;
+            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+
+            & .img_wrapper {
+                padding: 48px;
+                max-width: 480px;
+
+                & img {
+                    width: 100%;
+                }
+            }
+
+            & .site_title {
+                padding: 48px;
+                display: flex;
+                flex-direction: column;
+                row-gap: 24px;
+                max-width: 576px;
+
+                & h3 {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    font-family: Inter-Semibold;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 28px;
+                }
+
+                & p {
+                    font-family: Inter-Regular;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+
+                & .technologies {
+                    display: flex;
+                    gap: 8px;
+                    flex-wrap: wrap;
+
+                    & span {
+                        padding: 4px 20px;
+                        border-radius: 12px;
+                        font-family: Inter-Medium;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+
+        & .work_card:nth-child(2) {
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #work {
+        padding: 64px 0;
+
+        & .work_btn {
+            display: block;
+            margin: 0 auto;
+            padding: 4px 20px;
+            border-radius: 12px;
+            background: var(--gray-200, #E5E7EB);
+            color: var(--gray-600, #4B5563);
+            font-family: Inter-Medium;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+        }
+
+        & .work_text {
+            text-align: center;
+            font-family: Inter-Regular;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 28px;
+            margin: 16px 0 48px 0;
+        }
+
+        & .card_wrapper {
+            display: flex;
+            flex-direction: column;
+            row-gap: 24px;
+
+            & .work_card {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                border-radius: 12px;
+                box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+
+                & .img_wrapper {
+                    padding: 32px;
+                    max-width: 480px;
+
+                    & img {
+                        width: 100%;
+                    }
+                }
+
+                & .site_title {
+                    padding: 48px;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 24px;
+                    max-width: 576px;
+
+                    & h3 {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        font-family: Inter-Semibold;
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 28px;
+                    }
+
+                    & p {
+                        font-family: Inter-Regular;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+
+                    & .technologies {
+                        display: flex;
+                        gap: 8px;
+                        flex-wrap: wrap;
+
+                        & span {
+                            padding: 4px 20px;
+                            border-radius: 12px;
+                            font-family: Inter-Medium;
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+
+            & .work_card:nth-child(2) {
+                flex-direction: column-reverse;
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+#testimonials {
+    padding: 96px 0;
+
+    & .test_btn {
+        display: block;
+        margin: 0 auto;
+        padding: 4px 20px;
+        border-radius: 12px;
+        background: var(--gray-200, #E5E7EB);
+        color: var(--gray-600, #4B5563);
+        font-family: Inter-Medium;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+    & .test_text {
+        text-align: center;
+        font-family: Inter-Regular;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        margin: 16px 0 48px 0;
+    }
+
+    & .card_wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        & .test_card {
+            display: flex;
+            flex-direction: column;
+            row-gap: 24px;
+            align-items: center;
+            max-width: 375px;
+            border-radius: 12px;
+            padding: 48px;
+            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+
+            & img {
+                width: 64px;
+                height: 64px;
+            }
+
+            & p {
+                font-family: Inter-Regular;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+
+            & .card_footer {
+                display: flex;
+                flex-direction: column;
+                row-gap: 4px;
+                align-items: center;
+
+                & h5 {
+                    text-align: center;
+                    font-family: Inter-Semibold;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 28px;
+                }
+
+                & span {
+                    text-align: center;
+                    font-family: Inter-Regular;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}

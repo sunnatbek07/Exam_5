@@ -1,0 +1,123 @@
+#experience {
+    padding: 96px 0;
+
+    & .exp_btn {
+        display: block;
+        margin: 0 auto;
+        padding: 4px 20px;
+        border-radius: 12px;
+        background: var(--gray-200, #E5E7EB);
+        color: var(--gray-600, #4B5563);
+        font-family: Inter-Medium;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+    & .exp_text {
+
+        text-align: center;
+        font-family: Inter-Regular;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        margin: 16px 0 48px 0;
+    }
+
+    & .exp_wrapper {
+        display: flex;
+        row-gap: 48px;
+
+        & .exp_card {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 896px;
+            margin: 0 auto;
+            padding: 32px;
+            border-radius: 12px;
+            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+
+            & .exp_card_txt {
+                & h4 {
+                    font-family: Inter-Semibold;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 28px;
+                }
+
+                & ul {
+                    list-style-type: disc;
+                    margin-left: 20px;
+                    font-family: Inter-Regular;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+
+                & p {
+                    display: none;
+                }
+            }
+
+            & p {
+                font-family: Inter-Regular;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #experience {
+        padding: 64px 0;
+
+        & .exp_card {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-between;
+            row-gap: 16px;
+            width: 100%;
+            max-width: 896px;
+            margin: 0 auto;
+            padding: 32px;
+            border-radius: 12px;
+            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+
+            & .exp_card_txt {
+                & h4 {
+                    font-family: Inter-Semibold;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 28px;
+                    margin-bottom: 16px;
+                }
+
+                & ul {
+                    list-style-type: disc;
+                    margin-left: 20px;
+                    font-family: Inter-Regular;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+
+                & p {
+                    display: block !important;
+                }
+            }
+
+            & p {
+                font-family: Inter-Regular;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                display: none;
+            }
+        }
+    }
+}
